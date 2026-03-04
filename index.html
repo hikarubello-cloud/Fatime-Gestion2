@@ -948,9 +948,7 @@ ni<!DOCTYPE html>
     </script> 
 <script>
 if ("serviceWorker" in navigator) {
-  navigator.serviceWorker.register("/service-worker.js")
-    .then(() => console.log("Service Worker actif"))
-    .catch(err => console.log("Erreur SW:", err));
+  navigator.serviceWorker.register("service-worker.js");
 }
 </script>
 </body>
