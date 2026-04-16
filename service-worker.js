@@ -1,3 +1,5 @@
+let currentUser = localStorage.getItem("fatimeCurrentUser") || null;
+let users = JSON.parse(localStorage.getItem("fatimeUsers")) || {};
 const CACHE_NAME = "fatime-cache-v1";
 
 self.addEventListener("install", event => {
